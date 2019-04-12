@@ -1,11 +1,13 @@
 import React from 'react';
 
-const Contact = () => (
-	<div>
-		<div style={{width:'100vw',height:'100vh'}}><embed src="resume.pdf" width="100%" height="100%"/></div>
-	</div>
-);
+const Contact = () => {
+	return (
+		<div>
+			<span>resume:</span>
+			<a href="/resume"><span>view</span></a>
+			<a href='resume.pdf' download={true}><span>download</span></a>
+		</div>
+	);
+}
 
 export default Contact;
-
-// https://github.com/brettcnelson/brettcnelson.github.io/blob/master/resume.pdf
