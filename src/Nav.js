@@ -9,8 +9,3 @@ const Nav = () => (
 );
 
 export default Nav;
-
-	// <nav className="Nav">
-	// 	<div className="nav-link"><Link to='/'><code>root</code></Link></div>
-	// 	<div className="nav-link"><Link to='/list'><code>/list</code></Link></div>
-	// </nav>
