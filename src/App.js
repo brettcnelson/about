@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Nav from './Nav';
 import Projects from './Projects';
@@ -8,7 +8,7 @@ import Resume from './Resume';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="App">
         <Nav />
         <Switch>
@@ -16,9 +16,8 @@ const App = () => {
           <Route path="/contact" component={Contact} />
           <Route path="/resume" component={Resume} />
         </Switch>
-        <footer className="footer">foot</footer>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

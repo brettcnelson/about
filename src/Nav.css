@@ -1,0 +1,12 @@
+nav {
+	margin-bottom:20px;
+	display:grid;
+	grid-template-columns:repeat(3,100px);
+	border-bottom:5px solid #f18000;
+	background:black;
+	width:100%;
+}
+
+.active {
+	text-decoration:underline;
+}
