@@ -1,12 +1,36 @@
 nav {
-	margin-bottom:20px;
+	--background:#333333;
+	background:var(--background);
 	display:grid;
-	grid-template-columns:repeat(3,100px);
-	border-bottom:5px solid #f18000;
-	background:black;
+	grid-template-columns:repeat(4,100px);
+	border-bottom:2px solid var(--themecolor);
+	padding:5px 0;
 	width:100%;
+	overflow:scroll;
 }
 
-.active {
-	text-decoration:underline;
+.Link {
+	align-self:center;
+	color:var(--themecolor);
+	text-decoration:none;
+	text-align:center;
 }
+
+.Link img {
+	border:1px solid var(--background);
+}
+
+.Link span {
+	border:1px solid var(--background);
+	padding-bottom:2px;
+}
+
+.active img {
+	border:1px solid var(--themecolor);
+	border-radius:50%;
+}
+
+.active span {
+	border-bottom:1px solid var(--themecolor);
+	font-weight:bold;
+}	

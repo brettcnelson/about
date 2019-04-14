@@ -1,7 +1,9 @@
 import React from 'react';
 
 const Resume = () => (
-	<embed src="resume.pdf" style={{width:'100%',height:'100vh'}}/>
+	<object data="resume.pdf" type="application/pdf" style={{width:'100%',height:'100vh'}}>
+		<a href="resume.pdf" download={true}>download my resume</a>
+	</object>
 );
 
 export default Resume;

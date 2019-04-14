@@ -6,19 +6,20 @@
 	grid-template-columns:repeat(2,1fr);
 	grid-gap:10px;
 	margin:20px;
-	transition:margin 2s;
+	transition:margin 1s;
 }
 
 .project {
-	border:1px solid #f18000;
+	border:1px solid var(--themecolor);
 	text-align:center;
 	background:rgba(255,255,255,.5);
 	padding:0 10px;
 	display:grid;
+	transition:padding 1s;
 }
 
 .projectimg {
-	/*max-height:300px;*/
+	max-height:50vh;
 	max-width:100%;
 	margin:auto;
 }
@@ -27,8 +28,24 @@
 	align-self:end;
 }
 
-@media screen and (max-width:1025px) {
+.links {
+	color:var(--textcolor);
+	-webkit-transition: color 1s ease-in;
+	-moz-transition: color 1s ease-in;
+	-o-transition: color 1s ease-in;
+}
+
+.links:hover {
+	color:var(--themecolor);
+}
+
+
+@media screen and (max-width:800px) {
 	.projectcon {
-		display:block;
+		grid-template-columns:1fr;
+		margin:10px;
+	}
+	.project {
+		padding:5px;
 	}
 }
