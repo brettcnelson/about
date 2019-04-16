@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Nav.css';
+// {'Resum\xE9'}
 
 const Nav = () => {
 	return (

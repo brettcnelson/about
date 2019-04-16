@@ -7,20 +7,26 @@ import Projects from './Projects';
 import Contact from './Contact';
 import Resume from './Resume';
 
-const App = () => {
+export default () => {
   return (
-    <HashRouter>
+    <div id="main">
       <div className="App">
-        <Nav />
-        <Switch>
-          <Route exact path="/" component={Landing} />
-          <Route path="/portfolio" component={Projects} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/resume" component={Resume} />
-        </Switch>
+        <HashRouter>
+          <Nav />
+          <Switch>
+            <Route exact path="/" component={Landing} />
+            <Route path="/portfolio" component={Projects} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/resume" component={Resume} />
+          </Switch>
+        </HashRouter>
       </div>
-    </HashRouter>
+      <div id="footer">
+        <a href='http://github.com/brettcnelson' target='_blank'><img src='github.png' /></a>
+        <a href='http://linkedin.com/in/brettcnelson' target='_blank' style={{float:'right'}}><img src='linkedin.png' /></a>
+      </div>
+    </div>
   );
 }
 
-export default App;
+// export default App;

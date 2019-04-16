@@ -1,25 +1,25 @@
 .phead {
 	text-align:center;
+	font-weight:normal;
 }
 .projectcon {
 	display:grid;
 	grid-template-columns:repeat(2,1fr);
 	grid-gap:10px;
-	margin:20px;
-	transition:margin 1s;
+	margin:0 10px 20px 10px;
 }
 
 .project {
-	border:1px solid var(--themecolor);
+	border:1px solid var(--textcolor);
 	text-align:center;
-	background:rgba(255,255,255,.5);
+	background:rgba(255,255,255,.2);
 	padding:0 10px;
 	display:grid;
 	transition:padding 1s;
 }
 
 .projectimg {
-	max-height:50vh;
+	max-height:500px;
 	max-width:100%;
 	margin:auto;
 }
@@ -43,7 +43,6 @@
 @media screen and (max-width:800px) {
 	.projectcon {
 		grid-template-columns:1fr;
-		margin:10px;
 	}
 	.project {
 		padding:5px;

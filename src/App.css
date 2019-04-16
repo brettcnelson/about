@@ -1,3 +1,11 @@
+* {
+	box-sizing:border-box;
+}
+
+html, body, #root, #main {
+	height:100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,9 +14,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  box-sizing:border-box;
-  --background:#f7f7f7;
-  background:var(--background);
+  background:#f2e4d6;
+  --textcolor:#333333;
 }
 
 code {
@@ -18,11 +25,15 @@ code {
 
 .App {
 	--themecolor:#f18000;
-	--textcolor:#333333;
-	/*padding-bottom:20px;*/
-/*	background-image:url('/background.jpeg');
-	height:100%;
-	background-size:cover;
-	background-position: center;*/
 	color:var(--textcolor);
+
+	height:auto;
+	min-height:100%;
+	padding-bottom:4em;
+	margin-bottom:-4em;
+}
+
+#footer {
+	height:4em;
+	padding:1em 25%;
 }

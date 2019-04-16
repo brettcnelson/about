@@ -1,12 +1,12 @@
 nav {
-	--background:#333333;
-	background:var(--background);
+	background:var(--textcolor);
 	display:grid;
 	grid-template-columns:repeat(4,100px);
 	border-bottom:2px solid var(--themecolor);
-	padding:5px 0;
+	padding:4px 0;
 	width:100%;
 	overflow:scroll;
+	--border:2px;
 }
 
 .Link {
@@ -17,20 +17,28 @@ nav {
 }
 
 .Link img {
-	border:1px solid var(--background);
+	border:var(--border) solid var(--textcolor);
+	transition:border 1s, border-radius 1s;
 }
 
 .Link span {
-	border:1px solid var(--background);
-	padding-bottom:2px;
+	padding:2px;
+	border:var(--border) solid var(--textcolor);
 }
 
 .active img {
-	border:1px solid var(--themecolor);
+	border-color:var(--themecolor);
 	border-radius:50%;
 }
 
 .active span {
-	border-bottom:1px solid var(--themecolor);
-	font-weight:bold;
+	border-bottom-color:var(--themecolor);
+	/*font-weight:bold;*/
 }	
+
+@media screen and (max-width:400px) {
+	nav {
+		grid-template-columns:1fr;
+		grid-template-rows:52px repeat(3,30px);
+	}
+}
