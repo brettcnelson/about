@@ -10,9 +10,10 @@
 }
 
 .project {
-	border:1px solid var(--textcolor);
+	/*border:1px solid var(--textcolor);*/
+	/*background:var(--themecolor);*/
+	border-radius:5%;
 	text-align:center;
-	background:rgba(255,255,255,.2);
 	padding:0 10px;
 	display:grid;
 	transition:padding 1s;

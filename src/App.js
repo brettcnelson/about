@@ -20,9 +20,9 @@ export default () => {
         </HashRouter>
       </div>
       <div id="footer">
-        <a href='http://github.com/brettcnelson' target='_blank'><img src='github.png' /></a>
-        <a href='http://linkedin.com/in/brettcnelson' target='_blank' style={{float:'right'}}><img src='linkedin.png' /></a>
+        <a href='http://github.com/brettcnelson' target='_blank'><img src='images/github.png' /></a>
       </div>
     </div>
   );
 }
+// <a href='http://linkedin.com/in/brettcnelson' target='_blank' style={{float:'right'}}><img height='32px' src='linkedin.png' /></a>

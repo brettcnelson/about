@@ -2,7 +2,7 @@ nav {
 	background:var(--textcolor);
 	display:grid;
 	grid-template-columns:repeat(4,100px);
-	/*border-bottom:2px solid var(--themecolor);*/
+	border-bottom:2px solid var(--themecolor);
 	padding:4px 0;
 	width:100%;
 	overflow:scroll;

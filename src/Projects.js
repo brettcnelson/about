@@ -4,31 +4,31 @@ import './Projects.css';
 const projects = [
 	{
 		name: 'Fullstack React Boilerplate',
-		pic:'rfsb.png',
+		pic:'images/rfsb.png',
 		url:'https://fullstack-react-boilerplate.herokuapp.com/',
 		code:'https://github.com/brettcnelson/react-fullstack-boilerplate'
 	},
 	{
 		name: 'Trivial Conquest',
-		pic:'rfsb.png',
+		pic:'images/rfsb.png',
 		url:'https://intense-journey-25938.herokuapp.com',
 		code:'https://github.com/trivial-conquest/trivial-conquest'
 	},
 	{
 		name: 'Dark Sky Weather New Tab Page',
-		pic:'dsnt.jpg',
+		pic:'images/dsnt.jpg',
 		url:'https://chrome.google.com/webstore/detail/weather-widget-new-tab-pa/fecpjkhachlmnblhbmfldinkhfjeckkd',
 		code:'https://github.com/brettcnelson/dark-sky-new-tab'
 	},
 	{
 		name: 'Machine Learning Tic-Tac-Toe',
-		pic:'dsnt.jpg',
+		pic:'images/dsnt.jpg',
 		url:'https://auto-tic.herokuapp.com/',
 		code:'https://github.com/brettcnelson/auto-tic'
 	},
 	{
 		name: 'Sudoku Solver',
-		pic:'dsnt.jpg',
+		pic:'images/dsnt.jpg',
 		url:'https://auto-sudoku.herokuapp.com/',
 		code:'https://github.com/brettcnelson/sudoku-solver'
 	}
