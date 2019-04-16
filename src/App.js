@@ -5,7 +5,6 @@ import Nav from './Nav';
 import Landing from './Landing';
 import Projects from './Projects';
 import Contact from './Contact';
-import Resume from './Resume';
 
 export default () => {
   return (
@@ -17,7 +16,6 @@ export default () => {
             <Route exact path="/" component={Landing} />
             <Route path="/portfolio" component={Projects} />
             <Route path="/contact" component={Contact} />
-            <Route path="/resume" component={Resume} />
           </Switch>
         </HashRouter>
       </div>
@@ -28,5 +26,3 @@ export default () => {
     </div>
   );
 }
-
-// export default App;

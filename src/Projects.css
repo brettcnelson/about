@@ -30,15 +30,12 @@
 
 .links {
 	color:var(--textcolor);
-	-webkit-transition: color 1s ease-in;
-	-moz-transition: color 1s ease-in;
-	-o-transition: color 1s ease-in;
+	transition:color .75s;
 }
 
 .links:hover {
 	color:var(--themecolor);
 }
-
 
 @media screen and (max-width:800px) {
 	.projectcon {

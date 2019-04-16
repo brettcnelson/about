@@ -16,6 +16,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background:#f2e4d6;
   --textcolor:#333333;
+  --themecolor:#f18000;
+}
+
+button {
+	outline:none;
+}
+
+button:hover {
+	cursor:pointer;
 }
 
 code {
@@ -24,9 +33,7 @@ code {
 }
 
 .App {
-	--themecolor:#f18000;
 	color:var(--textcolor);
-
 	height:auto;
 	min-height:100%;
 	padding-bottom:4em;
@@ -36,4 +43,6 @@ code {
 #footer {
 	height:4em;
 	padding:1em 25%;
+	background:var(--themecolor);
+	/*border-top:1px solid var(--textcolor);*/
 }
