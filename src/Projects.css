@@ -31,6 +31,10 @@
 .links {
 	color:var(--textcolor);
 	transition:color .75s;
+	padding:10px;
+	border-radius:20%;
+	font-size:1em;
+	width:10ch;
 }
 
 .links:hover {

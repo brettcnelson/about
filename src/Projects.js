@@ -43,8 +43,8 @@ const Projects = () => {
 					<p>{p.name}</p>
 					<img className="projectimg" src={p.pic} alt=""/>
 					<p className="projectlinkscon">
-						<a className="links" href={p.url} target="_blank" rel="noopener noreferrer" style={{marginRight:'1em'}}>URL</a>
-						<a className="links" href={p.code} target="_blank" rel="noopener noreferrer" style={{marginLeft:'1em'}}><code>CODE</code></a>
+						<a href={p.url} target="_blank" rel="noopener noreferrer" style={{marginRight:'1em'}}><button className="links">url</button></a>
+						<a href={p.code} target="_blank" rel="noopener noreferrer" style={{marginLeft:'1em'}}><button className="links"><code>code</code></button></a>
 					</p>
 				</div>)}
 			</div>
