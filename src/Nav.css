@@ -33,7 +33,7 @@ nav {
 
 .active span {
 	border-bottom-color:var(--themecolor);
-	/*font-weight:bold;*/
+	font-style:italic;
 }	
 
 @media screen and (max-width:400px) {

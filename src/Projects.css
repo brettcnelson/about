@@ -11,6 +11,8 @@
 
 .project {
 	/*border:1px solid var(--textcolor);*/
+	/*border:5px solid white;*/
+	border:1px solid var(--themecolor);
 	/*background:var(--themecolor);*/
 	border-radius:5%;
 	text-align:center;
@@ -25,10 +27,6 @@
 	margin:auto;
 }
 
-.projectlinks {
-	align-self:end;
-}
-
 .links {
 	color:var(--textcolor);
 	transition:color .75s;
@@ -36,6 +34,7 @@
 	border-radius:20%;
 	font-size:1em;
 	width:10ch;
+	/*width:100%;*/
 }
 
 .links:hover {

@@ -20,7 +20,7 @@ export default () => {
         </HashRouter>
       </div>
       <div id="footer">
-        <a href='http://github.com/brettcnelson' target='_blank'><img src='images/github.png' /></a>
+        <a href='http://github.com/brettcnelson' target='_blank' rel="noopener noreferrer"><img src='images/github.png' alt=""/></a>
       </div>
     </div>
   );
