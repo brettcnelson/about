@@ -5,7 +5,7 @@ nav {
 	border-bottom:2px solid var(--themecolor);
 	padding:4px 0;
 	width:100%;
-	overflow:scroll;
+	overflow:auto;
 	--border:2px;
 }
 
