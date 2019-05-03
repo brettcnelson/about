@@ -8,7 +8,11 @@ const contacts = [
 	},
 	{
 		href: "http://github.com/brettcnelson",
-		src: "images/githubBig.png"
+		src: "images/GitHub-Mark-120px-plus.png"
+	},
+	{
+		href: "https://dev.to/brettcnelson",
+		src: "https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg"
 	},
 	{
 		href: "http://linkedin.com/in/brettcnelson",
@@ -29,3 +33,7 @@ const Contact = () => {
 }
 
 export default Contact;
+
+// <a href="https://dev.to/brettcnelson">
+//   <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Brett Nelson's DEV Profile" height="30" width="30" />
+// </a>

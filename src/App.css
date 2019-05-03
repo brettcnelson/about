@@ -17,6 +17,7 @@ body {
   background:#f2e4d6;
   --textcolor:#333333;
   --themecolor:#f18000;
+  --footerHeight:5em;
 }
 
 button {
@@ -37,14 +38,20 @@ code {
 	color:var(--textcolor);
 	height:auto;
 	min-height:100%;
-	padding-bottom:4em;
-	margin-bottom:-4em;
+	padding-bottom:var(--footerHeight);
+	margin-bottom:calc(0px - var(--footerHeight));
 }
 
 #footer {
-	height:4em;
+	height:var(--footerHeight);
 	padding:1em;
 	text-align:center;
 	background:var(--themecolor);
 	border-top:1px solid var(--textcolor);
+	display:grid;
+	grid-template-columns:repeat(auto-fit,minmax(1px,1fr));
+}
+
+#footer img {
+	height:calc(var(--footerHeight) - 2em);
 }
