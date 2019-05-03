@@ -2,7 +2,7 @@
   "name": "brettcnelson.site",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://test.com",
+  "homepage":"https://brettcnelson.site",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.6",

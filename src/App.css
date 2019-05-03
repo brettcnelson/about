@@ -15,6 +15,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background:#f2e4d6;
+  --background:#f2e4d6;
   --textcolor:#333333;
   --themecolor:#f18000;
   --footerHeight:5em;

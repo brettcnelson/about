@@ -2,6 +2,7 @@ nav {
 	background:var(--textcolor);
 	display:grid;
 	grid-template-columns:repeat(4,100px);
+	grid-template-rows:50px;
 	border-bottom:2px solid var(--themecolor);
 	padding:4px 0;
 	width:100%;
@@ -19,6 +20,10 @@ nav {
 .Link img {
 	border:var(--border) solid var(--textcolor);
 	transition:border 1s, border-radius 1s;
+	max-height:100%;
+	max-width:100%;
+	padding:3px;
+	background:var(--background);
 }
 
 .Link span {

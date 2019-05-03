@@ -1,7 +1,7 @@
 .contactcon {
 	/*padding-top:5%;*/
 	display:grid;
-	grid-template-columns:repeat(auto-fit,minmax(70px,auto));
+	grid-template-columns:repeat(auto-fit,minmax(350px,auto));
 	text-align:center;
 }
 

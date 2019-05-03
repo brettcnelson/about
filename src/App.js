@@ -26,4 +26,3 @@ export default () => {
     </div>
   );
 }
-// <a href='http://linkedin.com/in/brettcnelson' target='_blank' style={{float:'right'}}><img height='32px' src='linkedin.png' /></a>
