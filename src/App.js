@@ -20,8 +20,8 @@ export default () => {
         </HashRouter>
       </div>
       <div id="footer">
-        <a href='http://github.com/brettcnelson' target='_blank' rel="noopener noreferrer"><img src='images/GitHub-Mark-120px-plus.png' alt=""/></a>
-        <a href='https://brave.com/bre447' target='_blank' rel="noopener noreferrer"><img src='images/brave_lion_alt.png' alt=""/></a>
+        <div><a href='http://github.com/brettcnelson' target='_blank' rel="noopener noreferrer"><img src='images/GitHub-Mark-120px-plus.png' alt=""/></a></div>
+        <div><a href='https://brave.com/bre447' target='_blank' rel="noopener noreferrer"><img src='images/brave_lion_alt.png' alt=""/></a></div>
       </div>
     </div>
   );

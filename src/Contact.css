@@ -1,22 +1,18 @@
 .contactcon {
 	display:grid;
 	grid-template-columns:repeat(auto-fit,minmax(100px,1fr));
+	grid-auto-rows:100px;
 	text-align:center;
-	grid-gap:1%;
-	padding:1%;
+	grid-gap:5%;
+	padding:5%;
 }
 
-.contactlink {
-	display:grid;
+.contact {
+	padding:5%;
+	border:5px solid var(--textcolor);
 }
 
 .contactimg {
-	width:100%;
-	align-self:'center';
-}
-
-@media screen and (max-width:400px) {
-	.contactcon {
-		grid-template-columns:1fr;
-	}
+	max-height:100%;
+	max-width:100%;
 }

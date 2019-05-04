@@ -27,12 +27,14 @@ const contacts = [
 
 const Contact = () => {
 	return (
-		<div className="contactcon">
-			{contacts.map(({ href,src,alt }, i) => (<div key={i}>
-				<a className="contactlink" href={href} target='_blank' rel="noopener noreferrer" >
-					<img className="contactimg" src={src} alt={alt}/>
-				</a>
-			</div>))}
+		<div>
+			<div className="contactcon">
+				{contacts.map(({ href,src,alt }, i) => (<div className="contact" key={i}>
+					<a href={href} target='_blank' rel="noopener noreferrer" >
+						<img className="contactimg" src={src} alt={alt}/>
+					</a>
+				</div>))}
+			</div>
 		</div>
 	);
 }
