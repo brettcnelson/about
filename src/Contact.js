@@ -3,10 +3,6 @@ import './Contact.css';
 
 const contacts = [
 	{
-		href: "mailto:brettcnelson@gmail.com",
-		src: "images/emailBig.png"
-	},
-	{
 		href: "http://github.com/brettcnelson",
 		src: "images/GitHub-Mark-120px-plus.png"
 	},
@@ -14,6 +10,14 @@ const contacts = [
 		href: "https://dev.to/brettcnelson",
 		src: "https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg",
 		alt: "dev.to/brettcnelson"
+	},
+	{
+		href: "mailto:brettcnelson@gmail.com",
+		src: "images/emailBig.png"
+	},
+	{
+		href:'https://twitter.com/_b_r_e_t_t',
+		src:'images/twitter.png'
 	},
 	{
 		href: "http://linkedin.com/in/brettcnelson",
