@@ -13,11 +13,15 @@ const contacts = [
 	},
 	{
 		href: "mailto:brettcnelson@gmail.com",
-		src: "images/emailBig.png"
+		src: "images/email.png"
 	},
 	{
 		href:'https://twitter.com/_b_r_e_t_t',
 		src:'images/twitter.png'
+	},
+	{
+		href:'https://www.youtube.com/channel/UC2K4JNW9KtgzQ1bZkdN7X3g',
+		src:'images/yt_logo_mono_light.png'
 	},
 	{
 		href: "http://linkedin.com/in/brettcnelson",
@@ -30,7 +34,7 @@ const Contact = () => {
 		<div>
 			<div className="contactcon">
 				{contacts.map(({ href,src,alt }, i) => (<div className="contact" key={i}>
-					<a href={href} target='_blank' rel="noopener noreferrer" >
+					<a className="contactlink" href={href} target='_blank' rel="noopener noreferrer" >
 						<img className="contactimg" src={src} alt={alt}/>
 					</a>
 				</div>))}

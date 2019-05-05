@@ -12,8 +12,7 @@
 .project {
 	/*border:1px solid var(--textcolor);*/
 	/*border:5px solid white;*/
-	border:2px solid var(--textcolor);
-	/*background:var(--themecolor);*/
+	border:3px double var(--textcolor);
 	border-radius:5%;
 	text-align:center;
 	padding:0 10px;

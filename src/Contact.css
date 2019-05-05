@@ -8,11 +8,20 @@
 }
 
 .contact {
-	padding:5%;
-	border:5px solid var(--textcolor);
+	padding:3%;
+	border:3px solid var(--textcolor);
+	background:var(--themecolor);
+}
+
+.contactlink {
+	display:grid;
+	width:100%;
+	height:100%;
 }
 
 .contactimg {
 	max-height:100%;
 	max-width:100%;
+	align-self:center;
+	margin:auto;
 }
