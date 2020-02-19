@@ -10,7 +10,7 @@
 .contact {
 	padding:3%;
 	border:3px solid var(--textcolor);
-	background:var(--themecolor);
+	background:linear-gradient(var(--themecolor),var(--background));
 }
 
 .contactlink {

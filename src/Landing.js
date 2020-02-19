@@ -5,6 +5,7 @@ const Landing = () => {
 	return (
 		<div style={{textAlign:'center'}}>
 			<img style={{maxHeight:'100%',maxWidth:'100%'}} src="images/logoOrange.png" alt=""/>
+			<p>test</p>
 		</div>
 	);
 }
