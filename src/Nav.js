@@ -4,11 +4,13 @@ import './Nav.css';
 
 const Nav = () => {
 	return (
-		<nav>
-			<NavLink className="Link" activeClassName="active" exact={true} to="/"><span>Portfolio</span></NavLink>
-			<NavLink className="Link" activeClassName="active" to="/contact"><span>Contact</span></NavLink>
-			<NavLink className="Link" activeClassName="active" to="/resume"><span>Resume</span></NavLink>
-		</nav>
+		<header>
+			<nav>
+				<NavLink className="Link" activeClassName="active" exact={true} to="/"><span>Portfolio</span></NavLink>
+				<NavLink className="Link" activeClassName="active" to="/contact"><span>Contact</span></NavLink>
+				<NavLink className="Link" activeClassName="active" to="/resume"><span>Resume</span></NavLink>
+			</nav>
+		</header>
 	);
 }
 
