@@ -7,25 +7,21 @@ const contacts = [
     src: "images/GitHub-Mark-120px-plus.png"
   },
   {
-    href: "https://dev.to/brettcnelson",
-    src: "https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg",
-    alt: "dev.to/brettcnelson"
-  },
-  {
     href: "mailto:brettcnelson@gmail.com",
     src: "images/email.png"
+  },
+  {
+    href: "http://linkedin.com/in/brettcnelson",
+    src: "images/linkedinBig.png"
   },
   {
     href:'https://twitter.com/_brettcnelson',
     src:'images/twitter.png'
   },
   {
-    href:'https://www.youtube.com/channel/UC2K4JNW9KtgzQ1bZkdN7X3g',
-    src:'images/yt_logo_mono_light.png'
-  },
-  {
-    href: "http://linkedin.com/in/brettcnelson",
-    src: "images/linkedinBig.png"
+    href: "https://dev.to/brettcnelson",
+    src: "https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg",
+    alt: "dev.to/brettcnelson"
   }
 ];
 

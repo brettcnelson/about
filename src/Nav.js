@@ -5,10 +5,9 @@ import './Nav.css';
 const Nav = () => {
 	return (
 		<nav>
-			<NavLink className="Link" activeClassName="active" exact={true} to="/"><img src="images/logoOrange.png" alt=""/></NavLink>
-			<NavLink className="Link" activeClassName="active" to="/portfolio"><span>Portfolio</span></NavLink>
+			<NavLink className="Link" activeClassName="active" exact={true} to="/"><span>Portfolio</span></NavLink>
 			<NavLink className="Link" activeClassName="active" to="/contact"><span>Contact</span></NavLink>
-			<a className="Link" target='_blank' href='https://drive.google.com/file/d/1io0leQeU2ls1Ss_rHLrWQeNs5vWa04rp/view' rel="noopener noreferrer"><span>Resume</span></a>
+			<NavLink className="Link" activeClassName="active" to="/resume"><span>Resume</span></NavLink>
 		</nav>
 	);
 }

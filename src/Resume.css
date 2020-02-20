@@ -1,0 +1,38 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	align-items: center;
+}
+
+.resume {
+	display:grid;
+	grid-template-columns: 1fr 2fr;
+	grid-auto-rows: 1fr;
+	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.35);
+	grid-gap:2px;
+	grid-template-areas:
+		"name skills"
+		"projects education";
+}
+
+.box {
+	padding:0;
+	border:1px solid var(--themecolor);
+}
+
+.name {
+	grid-area:name;
+}
+
+.skills {
+	grid-area:skills;
+}
+
+.projects {
+	grid-area:projects;
+}
+
+.education {
+	grid-area:education;
+}

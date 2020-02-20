@@ -31,7 +31,24 @@ const projects = [
 		pic:'images/dsnt.jpg',
 		url:'https://auto-sudoku.herokuapp.com/',
 		code:'https://github.com/brettcnelson/sudoku-solver'
-	}
+	},
+  {
+    name: 'Sort Algorithm Animator',
+    pic:'images/dsnt.jpg',
+    url:'https://sort.brettcnelson.site',
+    code:'https://repl.it/@brettcnelson/sort-algos'
+  },
+  {
+    name: 'Mithril Test',
+    pic:'images/dsnt.jpg',
+    url:'https://thawing-waters-90525.herokuapp.com/',
+    code:'https://github.com/brettcnelson/mithril-test'
+  },
+  {
+    name: 'Minimal Framework',
+    pic:'images/dsnt.jpg',
+    code:'https://github.com/brettcnelson/MinimalFramework'
+  }
 ];
 
 const Projects = () => {
