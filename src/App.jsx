@@ -1,11 +1,11 @@
 import React from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
-import Nav from './Nav';
+import Nav from './Nav.jsx';
 import './App.css';
-import Projects from './Projects';
-import Project from './Project';
-import Contact from './Contact';
-import Resume from './Resume';
+import Projects from './Projects.jsx';
+import Project from './Project.jsx';
+import Contact from './Contact.jsx';
+import Resume from './Resume.jsx';
 
 export default () => {
   return (
