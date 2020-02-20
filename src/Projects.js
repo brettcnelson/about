@@ -1,6 +1,5 @@
 import React from 'react';
 import './Projects.css';
-import Nav from './Nav';
 
 const projects = [
 	{
@@ -55,7 +54,6 @@ const projects = [
 const Projects = () => {
 	return (
 		<div>
-			<Nav/>
 			<h1 className="phead">Portfolio</h1>
 			<div className="projectcon">
 				{projects.map((p,i)=><div key={i} className="project">

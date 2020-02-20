@@ -1,6 +1,5 @@
 import React from 'react';
 import './Contact.css';
-import Nav from './Nav';
 
 const contacts = [
   {
@@ -29,7 +28,6 @@ const contacts = [
 const Contact = () => {
   return (
     <div>
-      <Nav/>
       <div className="contactcon">
         {contacts.map(({ href,src,alt }, i) => (<div className="contact" key={i}>
           <a className="contactlink" href={href} target='_blank' rel="noopener noreferrer" >
