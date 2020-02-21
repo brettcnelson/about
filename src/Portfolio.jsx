@@ -1,9 +1,9 @@
 import React from 'react';
-import './Projects.scss';
+import './Portfolio.scss';
 import projects from './portfolio';
 import { NavLink } from 'react-router-dom';
 
-const Projects = () => {
+const Portfolio = () => {
 	return (
 		<div>
 			<h1 className="phead">Portfolio</h1>
@@ -20,4 +20,4 @@ const Projects = () => {
 	);
 }
 
-export default Projects;
+export default Portfolio;

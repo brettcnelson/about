@@ -1,48 +1,117 @@
-nav {
-	background:var(--textcolor);
-	display:grid;
-	grid-template-columns:repeat(4,100px);
-	grid-template-rows:50px;
-	border-bottom:2px solid var(--themecolor);
-	padding:4px 0;
+@import 'variables';
+
+header {
+	position:fixed;
+	z-index:2;
 	width:100%;
-	overflow:auto;
-	--border:3px;
-}
+	.nav-btn {
+		position:absolute;
+		z-index:3;
+		right:35px;
+		top:35px;
+		cursor:pointer;
+		@include easeOut;
+		.nav-line {
+			width:28px;
+			height:3px;
+			margin-bottom:5px;
+			background:$text-one;
+			@include easeOut;
+		}
+		&.close {
+			transform: rotate(180deg);
+			.nav-line {
+				&:nth-child(1) {
+					transform:rotate(45deg) translate(5px,5px);
+				}
+				&:nth-child(2) {
+					opacity:0;
+				}
+				&:nth-child(3) {
+					transform:rotate(-45deg) translate(6.5px,-6.5px);
+				}
+			}
+		}
+	}
 
-.Link {
-	align-self:center;
-	color:var(--themecolor);
-	text-decoration:none;
-	text-align:center;
-}
-
-.Link img {
-	border:var(--border) solid var(--textcolor);
-	transition:border 1s, border-radius 1s;
-	max-height:100%;
-	max-width:100%;
-	padding:3px;
-}
-
-.Link span {
-	padding:2px;
-	border:var(--border) solid var(--textcolor);
-}
-
-.active img {
-	border-color:var(--themecolor);
-	border-radius:50%;
-}
-
-.active span {
-	border-bottom-color:var(--themecolor);
-	font-style:italic;
-}	
-
-@media screen and (max-width:400px) {
-	nav {
-		grid-template-columns:1fr;
-		grid-template-rows:52px repeat(3,30px);
+	.nav {
+		position:fixed;
+		top:0;
+		width: 100%;
+		opacity:.8;
+		visibility:hidden;
+		&.show {
+			visibility:visible;
+		}
+		&-left,&-right {
+			display:flex;
+			flex-flow:column wrap;
+			align-items: center;
+			justify-content: center;
+			float:left;
+			width:50%;
+			height:100vh;
+			overflow:hidden;
+		}
+		&-left {
+			margin:0;
+			padding:0;
+			background:$background;
+			@include easeOut;
+			transform: translate3d(0,100%,0);
+			&.show {
+				transform:translate3d(0,0,0);
+			}
+			.logo {
+				width:200px;
+				height:200px;
+				background:url('/images/logoOrange-192.png');
+				border-radius:50%;
+				border:3px solid $text-two;
+				transform: translate3d(-500px,0,0);
+				@include easeOut;
+				&.show {
+					transform: translate3d(0,0,0);
+				}
+			}
+		}
+		&-right {
+			margin:0;
+			padding:0;
+			background:darken($background,5);
+			list-style:none;
+			transform: translate3d(0,-100%,0);
+			@include easeOut;
+			&.show {
+				transform:translate3d(0,0,0);
+			}
+		}
+		.nav-item {
+			transform: translate3d(500px,0,0);
+			@include easeOut;
+			&.show {
+				transform: translate3d(0,0,0);
+			}
+		}
+		@for $i from 1 through 3 {
+			.nav-item:nth-child(#{$i}) {
+				transition-delay: $i * .1s;
+			}
+		}
+		.nav-link {
+			display:inline-block;
+			position: relative;
+			font-size:2rem;
+			padding:1rem 0;
+			font-weight:300;
+			color:$text-one;
+			@include easeOut;
+			&.active {
+				color:$text-two;
+			}
+			&:hover {
+				color:$text-two;
+			}
+		}
 	}
 }

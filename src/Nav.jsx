@@ -2,16 +2,39 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Nav.scss';
 
-const Nav = () => {
-	return (
-		<header>
-			<nav>
-				<NavLink className="Link" activeClassName="active" exact={true} to="/"><span>Portfolio</span></NavLink>
-				<NavLink className="Link" activeClassName="active" to="/contact"><span>Contact</span></NavLink>
-				<NavLink className="Link" activeClassName="active" to="/resume"><span>Resume</span></NavLink>
-			</nav>
-		</header>
-	);
+class Nav extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			showMenu: false
+		};
+	}
+	toggleMenu() {
+		const showMenu = !this.state.showMenu;
+		this.setState({showMenu});
+	}
+	render() {
+		const [close,show] = this.state.showMenu ? [' close',' show'] : ['',''];
+		return (
+			<header>
+				<div className={`nav-btn${close}`} onClick={()=>this.toggleMenu()}>
+					<div className="nav-line"></div>
+					<div className="nav-line"></div>
+					<div className="nav-line"></div>
+				</div>
+				<nav className={`nav${show}`}>
+					<div className={`nav-left${show}`}>
+						<div className={`logo${show}`}></div>
+					</div>
+					<ul className={`nav-right${show}`}>
+						<li className={`nav-item${show}`}><NavLink className="nav-link" activeClassName="active" exact={true} to="/">Home</NavLink></li>
+						<li className={`nav-item${show}`}><NavLink className="nav-link" activeClassName="active" to="/info">Info</NavLink></li>
+						<li className={`nav-item${show}`}><NavLink className="nav-link" activeClassName="active" to="/portfolio">Portfolio</NavLink></li>
+					</ul>
+				</nav>
+			</header>
+		)
+	}
 }
 
 export default Nav;
