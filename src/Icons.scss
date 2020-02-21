@@ -1,0 +1,12 @@
+@import 'variables';
+
+.icons {
+  margin-top:1rem;
+  a {
+    padding:0.4rem;
+    &:hover {
+      color:$text-two;
+      @include easeOut();
+    }
+  }
+}

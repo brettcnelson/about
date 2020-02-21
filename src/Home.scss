@@ -7,16 +7,6 @@
   h1 {
     margin-top:10vh;
   }
-  .icons {
-    margin-top:1rem;
-    a {
-      padding:0.4rem;
-      &:hover {
-        color:$text-two;
-        @include easeOut();
-      }
-    }
-  }
 }
 
 h1,h2,h3 {
@@ -39,4 +29,17 @@ a {
 
 .text-two {
   color:$text-two;
+}
+
+@include mediaMedium {
+  .home {
+    text-align: center;
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+    .sm-heading {
+      background:rgba(lighten($background,2),0.5);
+    }
+  }
 }

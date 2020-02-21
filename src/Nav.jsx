@@ -27,9 +27,9 @@ class Nav extends React.Component {
 						<div className={`logo${show}`}></div>
 					</div>
 					<ul className={`nav-right${show}`}>
-						<li className={`nav-item${show}`}><NavLink className="nav-link" activeClassName="active" exact={true} to="/">Home</NavLink></li>
-						<li className={`nav-item${show}`}><NavLink className="nav-link" activeClassName="active" to="/info">Info</NavLink></li>
-						<li className={`nav-item${show}`}><NavLink className="nav-link" activeClassName="active" to="/portfolio">Portfolio</NavLink></li>
+						<li className={`nav-item${show}`}><NavLink className="nav-link" activeClassName="active" exact={true} to="/" onClick={()=>this.toggleMenu()}>Home</NavLink></li>
+						<li className={`nav-item${show}`}><NavLink className="nav-link" activeClassName="active" to="/info" onClick={()=>this.toggleMenu()}>Info</NavLink></li>
+						<li className={`nav-item${show}`}><NavLink className="nav-link" activeClassName="active" to="/portfolio" onClick={()=>this.toggleMenu()}>Portfolio</NavLink></li>
 					</ul>
 				</nav>
 			</header>

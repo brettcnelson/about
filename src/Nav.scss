@@ -115,3 +115,22 @@ header {
 		}
 	}
 }
+
+@include mediaMedium {
+	ul.nav-right,div.nav-left {
+		float:none;
+		width:100%;
+		min-height:0;
+		&.show {
+			transform:translate3d(0,0,0);
+		}
+	}
+	div.nav-left {
+		height:210px;
+		transform:translate3d(100%,0,0);
+	}
+	ul.nav-right {
+		height:calc(100vh - 210px);
+		transform:translate3d(-100%,0,0);
+	}
+}

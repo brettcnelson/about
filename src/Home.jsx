@@ -1,47 +1,19 @@
 import React from 'react';
 import './Home.scss';
+import Icons from './Icons.jsx';
 
-const icons = () => (
-	[
-		{
-		href: "http://github.com/brettcnelson",
-		class: 'fab fa-github'
-		},
-		{
-		href: "mailto:brettcnelson@gmail.com",
-		class: 'fas fa-envelope'
-		},
-		{
-		href: "http://linkedin.com/in/brettcnelson",
-		class: 'fab fa-linkedin'
-		},
-		{
-		href:'https://twitter.com/_brettcnelson',
-		class: 'fab fa-twitter'
-		},
-		{
-		href: "https://dev.to/brettcnelson",
-		class: 'fab fa-dev'
-		}
-	].map((i,j) => (
-		<a href={i.href} key={j}>
-			<i className={i.class+' fa-2x'}></i>
-		</a>
-	))
-);
-
-const Landing = () => {
+const Home = () => {
+	document.body.classList.remove('full-background','main-background');
+	document.body.classList.add('full-background');
 	return (
-    <main className="home">
-		<h1 className="lg-heading">
-			Brett <span className="text-two">Nelson</span>
-		</h1>
-		<h2 className="sm-heading">Software Engineer</h2>
-		<div className="icons">
-			{icons()}
-		</div>
-	</main>
+		<main className="home">
+			<h1 className="lg-heading">
+				Brett <span className="text-two">Nelson</span>
+			</h1>
+			<h2 className="sm-heading">Software Engineer</h2>
+			<Icons />
+		</main>
 	);
 }
 
-export default Landing;
+export default Home;
