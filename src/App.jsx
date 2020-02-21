@@ -1,7 +1,7 @@
 import React from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import Nav from './Nav.jsx';
-import './App.css';
+import './App.scss';
 import Projects from './Projects.jsx';
 import Project from './Project.jsx';
 import Contact from './Contact.jsx';

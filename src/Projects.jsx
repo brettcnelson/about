@@ -1,5 +1,5 @@
 import React from 'react';
-import './Projects.css';
+import './Projects.scss';
 import projects from './portfolio';
 import { NavLink } from 'react-router-dom';
 
