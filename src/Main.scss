@@ -2,5 +2,11 @@
 
 .main {
   min-height: calc(100vh - #{$footer-height});
-  padding:2rem;
+  padding:2rem 1rem;
+
+  .lg-heading {
+    font-size: 2rem;
+    text-align:center;
+    border-bottom:1px solid $text-two;
+  }
 }

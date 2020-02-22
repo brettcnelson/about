@@ -26,7 +26,7 @@ const jobs = [
 ];
 
 const job = (j,i) => (
-  <div className="box job">
+  <div key={i} className="box job">
     <div className="name">{j.name}</div>
     <div className="position">{j.position}</div>
     <ul>{j.points.map((p,i)=><li key={i}>{p}</li>)}</ul>
@@ -47,7 +47,7 @@ const education = [
 ];
 
 const school = (s,i) => (
-  <div className="box school">
+  <div key={i}  className="box school">
     <div className="name">{s.name}</div>
     <div className="desc">{s.desc}</div>
     <div className="date">{s.date}</div>
