@@ -20,7 +20,6 @@ body {
 }
 
 .full-background {
-  background:$home-image;
   background-attachment:fixed;
   background-size:cover;
   &:after {

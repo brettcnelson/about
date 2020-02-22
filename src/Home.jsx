@@ -4,6 +4,7 @@ import icons from './Icons.jsx';
 
 const Home = () => {
 	document.body.classList.remove('full-background','main-background');
+	document.body.style.background = "url('images/background.jpg')";
 	document.body.classList.add('full-background');
 	return (
 		<main className="home">

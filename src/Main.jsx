@@ -8,7 +8,8 @@ import './Main.scss';
 
 export default () => {
   document.body.classList.remove('full-background','main-background');
-	document.body.classList.add('main-background');
+  document.body.style = '';
+  document.body.classList.add('main-background');
   return (
     <div>
       <main className="main">
