@@ -38,3 +38,24 @@ body {
 .main-background {
   background:$background;
 }
+
+h1,h2,h3 {
+  margin:0;
+  font-weight:400;
+}
+
+.lg-heading {
+  font-size:5rem;
+}
+
+.icons {
+  a {
+    padding:0.4rem;
+    color:$text-one;
+    text-decoration:none;
+    &:hover {
+      color:$text-two;
+      @include easeOut();
+    }
+  }
+}

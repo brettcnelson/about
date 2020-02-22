@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.scss';
-import Icons from './Icons.jsx';
+import icons from './Icons.jsx';
 
 const Home = () => {
 	document.body.classList.remove('full-background','main-background');
@@ -11,7 +11,7 @@ const Home = () => {
 				Brett <span className="text-two">Nelson</span>
 			</h1>
 			<h2 className="sm-heading">Software Engineer</h2>
-			<Icons />
+			<div className="icons">{icons()}</div>
 		</main>
 	);
 }

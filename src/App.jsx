@@ -3,9 +3,7 @@ import { HashRouter, Route, Switch } from 'react-router-dom';
 import Nav from './Nav.jsx';
 import './App.scss';
 import Home from './Home.jsx';
-import Portfolio from './Portfolio.jsx';
-import Project from './Project.jsx';
-import Info from './Info.jsx';
+import Main from './Main.jsx';
 
 export default () => {
   return (
@@ -14,9 +12,7 @@ export default () => {
         <Nav />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/portfolio" component={Portfolio} />
-          <Route path="/portfolio/:id" component={Project} />
-          <Route path="/info" component={Info} />
+          <Route path="/" component={Main} />
         </Switch>
       </HashRouter>
     </div>

@@ -4,31 +4,24 @@
   padding:3rem;
   height:100%;
   overflow:hidden;
-  h1 {
+
+  .lg-heading {
     margin-top:10vh;
   }
-}
 
-h1,h2,h3 {
-  margin:0;
-  font-weight:400;
-  &.lg-heading {
-    font-size:5rem;
-  }
-  &.sm-heading {
+  .sm-heading {
     margin-bottom:2rem;
     padding: 0.2rem 1rem;
     background:linear-gradient(to right, rgba(lighten($background,2),0.5),rgba($background,0));
   }
-}
 
-a {
-  color:$text-one;
-  text-decoration:none;
-}
+  .text-two {
+    color:$text-two;
+  }
 
-.text-two {
-  color:$text-two;
+  .icons {
+    margin-top:1rem;
+  }
 }
 
 @include mediaMedium {

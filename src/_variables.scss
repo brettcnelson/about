@@ -1,8 +1,10 @@
 $background:#444; //#f2e4d6
 $background-opacity:0.8;
+$nav-opacity:0.9;
 $home-image:url('/images/background.jpg');
 $text-one:#fff;
 $text-two:#eece1a;
+$footer-height:3rem;
 
 @mixin easeOut {
   transition: all 0.5s ease-out;

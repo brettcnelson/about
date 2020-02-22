@@ -4,6 +4,7 @@ header {
 	position:fixed;
 	z-index:2;
 	width:100%;
+
 	.nav-btn {
 		position:absolute;
 		z-index:3;
@@ -11,6 +12,7 @@ header {
 		top:35px;
 		cursor:pointer;
 		@include easeOut;
+
 		.nav-line {
 			width:28px;
 			height:3px;
@@ -18,15 +20,20 @@ header {
 			background:$text-one;
 			@include easeOut;
 		}
+
 		&.close {
 			transform: rotate(180deg);
+
 			.nav-line {
+
 				&:nth-child(1) {
 					transform:rotate(45deg) translate(5px,5px);
 				}
+
 				&:nth-child(2) {
 					opacity:0;
 				}
+
 				&:nth-child(3) {
 					transform:rotate(-45deg) translate(6.5px,-6.5px);
 				}
@@ -38,11 +45,13 @@ header {
 		position:fixed;
 		top:0;
 		width: 100%;
-		opacity:.8;
+		opacity:$nav-opacity;
 		visibility:hidden;
+
 		&.show {
 			visibility:visible;
 		}
+
 		&-left,&-right {
 			display:flex;
 			flex-flow:column wrap;
@@ -53,6 +62,7 @@ header {
 			height:100vh;
 			overflow:hidden;
 		}
+
 		&-left {
 			margin:0;
 			padding:0;
@@ -62,6 +72,7 @@ header {
 			&.show {
 				transform:translate3d(0,0,0);
 			}
+
 			.logo {
 				width:200px;
 				height:200px;
@@ -70,11 +81,13 @@ header {
 				border:3px solid $text-two;
 				transform: translate3d(-500px,0,0);
 				@include easeOut;
+
 				&.show {
 					transform: translate3d(0,0,0);
 				}
 			}
 		}
+
 		&-right {
 			margin:0;
 			padding:0;
@@ -82,33 +95,43 @@ header {
 			list-style:none;
 			transform: translate3d(0,-100%,0);
 			@include easeOut;
+
 			&.show {
 				transform:translate3d(0,0,0);
 			}
-		}
-		.nav-item {
-			transform: translate3d(500px,0,0);
-			@include easeOut;
-			&.show {
-				transform: translate3d(0,0,0);
+
+			.nav-item {
+				transform: translate3d(500px,0,0);
+				@include easeOut;
+	
+				&.show {
+					transform: translate3d(0,0,0);
+				}
+			}
+
+			@for $i from 1 through 3 {
+				.nav-item:nth-child(#{$i}) {
+					transition-delay: $i * .1s;
+				}
 			}
 		}
-		@for $i from 1 through 3 {
-			.nav-item:nth-child(#{$i}) {
-				transition-delay: $i * .1s;
-			}
-		}
+		
+
+
 		.nav-link {
 			display:inline-block;
-			position: relative;
+			// position: relative;
 			font-size:2rem;
 			padding:1rem 0;
 			font-weight:300;
 			color:$text-one;
+			text-decoration:none;
 			@include easeOut;
+
 			&.active {
 				color:$text-two;
 			}
+
 			&:hover {
 				color:$text-two;
 			}
@@ -121,16 +144,19 @@ header {
 		float:none;
 		width:100%;
 		min-height:0;
+
 		&.show {
 			transform:translate3d(0,0,0);
 		}
 	}
+
 	div.nav-left {
 		height:210px;
-		transform:translate3d(100%,0,0);
-	}
-	ul.nav-right {
-		height:calc(100vh - 210px);
 		transform:translate3d(-100%,0,0);
+	}
+
+	ul.nav-right {
+		transform:translate3d(100%,0,0);
+		justify-content: start;
 	}
 }

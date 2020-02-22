@@ -1,0 +1,9 @@
+@import 'variables';
+
+footer {
+  text-align: center;
+  background:darken($background,3);
+  height:$footer-height;
+  border-top:1px solid $text-two;
+  padding:1rem;
+}
