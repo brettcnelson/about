@@ -20,6 +20,7 @@ body {
 }
 
 .full-background {
+  // background image is set in <Home />
   background-attachment:fixed;
   background-size:cover;
   &:after {

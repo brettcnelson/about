@@ -24,7 +24,7 @@ class Nav extends React.Component {
 				</div>
 				<nav className={`nav${show}`}>
 					<div className={`nav-left${show}`}>
-						<div className={`logo${show}`}></div>
+						<div className={`logo${show}`} style={{background:"url('images/logoOrange-192.png')"}}></div>
 					</div>
 					<ul className={`nav-right${show}`}>
 						<li className={`nav-item${show}`}><NavLink className="nav-link" activeClassName="active" exact={true} to="/" onClick={()=>this.toggleMenu()}>Home</NavLink></li>
