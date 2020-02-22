@@ -15,14 +15,14 @@ const Portfolio = () => {
 								<i className="fas fa-info-circle"></i> Details
 							</button>
 						</NavLink>
-						<a href={p.code}>
+						<a href={p.code} target="_blank" rel="noopener noreferrer">
 							<button>
 								<i className="fab fa-github"></i> GitHub
 							</button>
 						</a>
 						<img src={p.pic} alt={p.name}/>
 						{p.url ? (
-							<a href={p.url}>
+							<a href={p.url} target="_blank" rel="noopener noreferrer">
 								<button>
 									<i className="fas fa-globe"></i> Site
 								</button>

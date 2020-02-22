@@ -26,11 +26,11 @@ const icons = [
     href:'https://twitter.com/_brettcnelson',
     class: 'fab fa-twitter'
   },
-  {
-    text: 'DEV',
-    href: "https://dev.to/brettcnelson",
-    class: 'fab fa-dev'
-  }
+  // {
+  //   text: 'DEV',
+  //   href: "https://dev.to/brettcnelson",
+  //   class: 'fab fa-dev'
+  // }
 ];
 
 export default (text) => (
