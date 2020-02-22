@@ -14,7 +14,7 @@ export default [
   },
   {
     name: 'Github Repo Search',
-    pic: '',
+    pic:'images/rfsb.png',
     code: 'https://github.com/brettcnelson/fullstackgithub',
     url: '',
     desc: 'Search GitHub for any user and view a list of repositories sorted by popularity.',

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import Portfolio from './Portfolio.jsx';
 import Project from './Project.jsx';
 import Info from './Info.jsx';
@@ -17,6 +17,7 @@ export default () => {
           <Route exact path="/portfolio" component={Portfolio} />
           <Route path="/portfolio/:id" component={Project} />
           <Route path="/info" component={Info} />
+          <Redirect to="/" />
         </Switch>
       </main>
       <Footer />
