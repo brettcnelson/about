@@ -5,16 +5,14 @@ import './App.scss';
 import Home from './Home.jsx';
 import Main from './Main.jsx';
 
-export default () => {
-  return (
-    <div className="App">
-      <HashRouter>
-        <Nav />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/" component={Main} />
-        </Switch>
-      </HashRouter>
-    </div>
-  );
-}
+export default () => (
+  <div className="App">
+    <HashRouter>
+      <Nav />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/" component={Main} />
+      </Switch>
+    </HashRouter>
+  </div>
+);

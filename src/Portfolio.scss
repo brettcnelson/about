@@ -2,17 +2,26 @@
 
 .projects {
 	display:grid;
-	grid-template-columns:repeat(4,1fr);
+	grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 	grid-gap:1rem;
 	padding-top:2rem;
 
 	.project {
 		display:grid;
 		text-align:center;
-	}
+		box-shadow:$shadow;
+		border:1px solid $text-two;
+		padding:.5rem;
 
-	a {
-		text-decoration:none;
+		button {
+			width:100%;
+			// text-align:start;
+
+			&:hover {
+				@include easeOut;
+				color:$text-two;
+			}
+		}
 	}
 
 	img {

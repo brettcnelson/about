@@ -1,8 +1,9 @@
 import React from 'react';
 import './Home.scss';
-import icons from './Icons.jsx';
+import { IconList } from './fontawesome';
 
-const Home = () => {
+
+export default () => {
 	document.body.classList.remove('full-background','main-background');
 	document.body.style.background = `url('${process.env.PUBLIC_URL}/images/background.jpg')`;
 	document.body.classList.add('full-background');
@@ -12,9 +13,7 @@ const Home = () => {
 				Brett <span className="text-two">Nelson</span>
 			</h1>
 			<h2 className="sm-heading">Software Engineer</h2>
-			<div className="icons">{icons()}</div>
+			<div className="icons">{IconList()}</div>
 		</main>
 	);
 }
-
-export default Home;

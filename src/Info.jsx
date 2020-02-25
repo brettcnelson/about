@@ -1,6 +1,6 @@
 import React from 'react';
 import './Info.scss';
-import icons from './Icons.jsx';
+import { IconList } from './fontawesome';
 
 const skills = 'HTML, CSS, Sass, Javascript, React, Angular, JQuery, Node, Express, MongoDB, Mongoose, PostgreSQL, Knex, SQLite3, D3, Git, Heroku';
 
@@ -54,30 +54,28 @@ const school = (s,i) => (
   </div>
 );
 
-export default () => {
-  return (
-    <div className="info">
-      <h1 className="lg-heading">Info</h1>
-      <div>
-        <h3 className="sm-heading">Contact</h3>
-        <div className="icons">{icons(true)}</div>
-      </div>
-      <div>
-        <h3 className="sm-heading">Skills</h3>
-        <ul className="box"><li>{skills}</li></ul>
-      </div>
-      <div>
-        <h3 className="sm-heading">Work Experience</h3>
-        <div className="jobs">
-          {jobs.map(job)}
-        </div>
-      </div>
-      <div>
-        <h3 className="sm-heading">Education</h3>
-        <div className="schools">
-          {education.map(school)}
-        </div>
+export default () => (
+  <div className="info">
+    <h1 className="lg-heading">Info</h1>
+    <div>
+      <h3 className="sm-heading">Contact</h3>
+      <div className="icons">{IconList(true)}</div>
+    </div>
+    <div>
+      <h3 className="sm-heading">Skills</h3>
+      <ul className="box skills"><li>{skills}</li></ul>
+    </div>
+    <div>
+      <h3 className="sm-heading">Work Experience</h3>
+      <div className="jobs">
+        {jobs.map(job)}
       </div>
     </div>
-  );
-}
+    <div>
+      <h3 className="sm-heading">Education</h3>
+      <div className="schools">
+        {education.map(school)}
+      </div>
+    </div>
+  </div>
+);

@@ -1,10 +1,12 @@
 export default [
   {
     name: 'Viking Conquest',
+    desc: 'A location-based territorial strategy game',
     pic:'images/rfsb.png',
-    code: 'https://github.com/trivial-conquest/trivial-conquest',
-    url:'https://intense-journey-25938.herokuapp.com',
-    desc: 'A location-based territorial strategy game.',
+    links: [
+      {name:'GitHub',url:'https://github.com/trivial-conquest/trivial-conquest'},
+      {name:'Site',url:'https://intense-journey-25938.herokuapp.com'}
+    ],
     points: [
       'Called Google Maps API to render location-based maps and save user-designated map markers',
       'Configured Ionic framework with Cordova plugins to develop mobile web-focused UI',
@@ -14,10 +16,11 @@ export default [
   },
   {
     name: 'Github Repo Search',
-    pic:'images/rfsb.png',
-    code: 'https://github.com/brettcnelson/fullstackgithub',
-    url: '',
-    desc: 'Search GitHub for any user and view a list of repositories sorted by popularity.',
+    desc: 'Search GitHub for any user and view a list of repositories sorted by popularity',
+    pic:'images/dsnt.jpg',
+    links: [
+      {name:'GitHub',url:'https://github.com/brettcnelson/fullstackgithub'}
+    ],
     points: [
       'Created Knex schemas to manage SQLite database',
       'Called GitHub API to add data to database using Node and Express',
@@ -26,20 +29,26 @@ export default [
   },
   {
     name: 'React Fullstack Boilerplate',
+    desc: 'A fullstack create-react-app',
     pic:'images/rfsb.png',
-    code: 'https://github.com/brettcnelson/react-fullstack-boilerplate',
-    url:'https://fullstack-react-boilerplate.herokuapp.com/',
-    desc: 'A fullstack create-react-app.',
+    links: [
+      {name:'GitHub',url:'https://github.com/brettcnelson/react-fullstack-boilerplate'},
+      {name:'Site',url:'https://fullstack-react-boilerplate.herokuapp.com/'}
+    ],
     points: [
       'Built fullstack boilerplate with create-react-app, react-router, an expres proxy API server, working CRUD functionality with MongoDB/mongoose - preconfigured for easy Heroku deployment'
     ]
   },
   {
     name: 'Dark Sky New Tab Chrome Extension',
+    desc: 'A lightweight weather widget chrome extension',
     pic:'images/dsnt.jpg',
-    code: 'https://github.com/brettcnelson/dark-sky-new-tab',
-    url:'https://chrome.google.com/webstore/detail/weather-widget-new-tab-pa/fecpjkhachlmnblhbmfldinkhfjeckkd',
-    desc: 'A lightweight weather widget chrome extension.',
+    links: [
+      {name:'GitHub',url:'https://github.com/brettcnelson/dark-sky-new-tab'},
+      {name:'Site',url:'https://dark-sky-new-tab.herokuapp.com/'},
+      {name:'Chrome Extension',url:'https://chrome.google.com/webstore/detail/weather-widget-new-tab-pa/fecpjkhachlmnblhbmfldinkhfjeckkd'}
+
+    ],
     points: [
       'Published new tab Chrome extension in Chrome Web Store (~475 users, 4.9 star rating)',
       'Combined Dark Sky weather data with Google Maps API to: get location-based weather, search any location for weather, get relevant Dark Sky and Google Maps links, and save your search locations'
@@ -47,10 +56,12 @@ export default [
   },
   {
     name: 'Tic-Tac-Toe Machine Learning',
-    pic:'images/dsnt.jpg',
-    code: 'https://github.com/brettcnelson/auto-tic',
-    url:'https://auto-tic.herokuapp.com/',
-    desc: 'A self-trained tic-tac-toe engine.',
+    desc: 'A self-trained tic-tac-toe engine',
+    pic:'images/rfsb.png',
+    links: [
+      {name:'GitHub',url:'https://github.com/brettcnelson/auto-tic'},
+      {name:'Site',url:'https://auto-tic.herokuapp.com/'}
+    ],
     points: [
       'Wrote machine learning algorithm for tic-tac-toe self-play',
       'Built React front-end where users can play against the computer as it continues to learn'
@@ -58,38 +69,48 @@ export default [
   },
   {
     name: 'Sudoku Solver',
+    desc: 'DESCRIPTION NEEDED',
     pic:'images/dsnt.jpg',
-    code: 'https://github.com/brettcnelson/sudoku-solver',
-    url:'https://auto-sudoku.herokuapp.com/',
-    desc: '',
+    links: [
+      {name:'GitHub',url:'https://github.com/brettcnelson/sudoku-solver'},
+      {name:'Site',url:'https://auto-sudoku.herokuapp.com/'}
+    ],
     points: [
       'Wrote React front-end combined with algorithm to recursively solve any Sudoku puzzle'
     ]
   },
   {
     name: 'Minimal Framework',
-    pic:'images/dsnt.jpg',
-    code: 'https://github.com/brettcnelson/MinimalFramework',
-    url:'',
-    desc: '',
+    desc: 'DESCRIPTION NEEDED',
+    pic:'images/rfsb.png',
+    links: [
+      {name:'GitHub',url:'https://github.com/brettcnelson/MinimalFramework'}
+    ],
     points: [
       'Built lightweight, minimal front-end framework script that diffs the DOM and manages component state'
     ]
   },
   {
     name: 'Sort Algorithm Animator',
+    desc: 'DESCRIPTION NEEDED',
     pic:'images/dsnt.jpg',
-    code:'https://repl.it/@brettcnelson/sort-algos',
-    url:'https://sort.brettcnelson.site',
-    desc:'',
-    points:[]
+    links: [
+      {name:'Site',url:'https://repl.it/@brettcnelson/sort-algos'}
+    ],
+    points:[
+      'POINTS NEEDED'
+    ]
   },
   {
     name: 'Mithril RSS Reader',
-    pic:'images/dsnt.jpg',
-    code:'https://github.com/brettcnelson/mithril-test',
-    url:'https://thawing-waters-90525.herokuapp.com/',
-    desc:'',
-    points:[]
+    desc: 'DESCRIPTION NEEDED',
+    pic:'images/rfsb.png',
+    links: [
+      {name:'GitHub',url:'https://github.com/brettcnelson/mithril-test'},
+      {name:'Site',url:'https://thawing-waters-90525.herokuapp.com/'}
+    ],
+    points:[
+      'POINTS NEEDED'
+    ]
   }
 ];

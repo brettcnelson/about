@@ -1,45 +1,37 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Portfolio.scss';
 import projects from './portfolio';
+import { fonts } from './fontawesome';
 
-const Portfolio = () => {
-	return (
-		<div className="portfolio">
-			<h1 className="lg-heading">Portfolio</h1>
-			<div className="projects">
-				{projects.map((p,i) => (
-					<div key={i} className="project">
-						<NavLink to={`/portfolio/${p.name}`}>
-							<button>
-								<i className="fas fa-info-circle"></i> Details
-							</button>
-						</NavLink>
-						<a href={p.code} target="_blank" rel="noopener noreferrer">
-							<button>
-								<i className="fab fa-github"></i> GitHub
-							</button>
-						</a>
-						<img src={p.pic} alt={p.name}/>
-						{p.url ? (
-							<a href={p.url} target="_blank" rel="noopener noreferrer">
-								<button>
-									<i className="fas fa-globe"></i> Site
-								</button>
-							</a>) : (
-							<div></div>			
-							)
-						}
-					</div>					
-				))}
-			</div>
+const link = (l,i) => (
+	<a key={i} href={l.url} target="_blank" rel="noopener noreferrer">
+		<button>
+			<i className={fonts[l.name]}></i> {l.name}
+		</button>
+	</a>
+);
+
+export default () => (
+	<div className="portfolio">
+		<h1 className="lg-heading">Portfolio</h1>
+		<div className="projects">
+			{projects.map((p,i) => (
+				<div key={i} className="project">
+					<h3>{p.name}</h3>
+					<h4>{p.desc}</h4>
+					<img src={p.pic} alt={p.name}/>
+					<Link to={`/portfolio/${p.name}`}>
+						<button>
+							<i className={fonts.details}></i> Details
+						</button>
+					</Link>
+					{p.links.map(link)}
+				</div>					
+			))}
 		</div>
-	);
-}
-
-export default Portfolio;
-
-
+	</div>
+);
 
 // {<div>
 // 	<h1 className="phead">Portfolio</h1>

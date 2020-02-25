@@ -2,7 +2,7 @@ import React from 'react';
 import { Redirect } from 'react-router-dom';
 import projects from './portfolio';
 
-const Project = ({match:{params:{id}}}) => {
+export default ({match:{params:{id}}}) => {
 	const current = projects.find(p=>p.name === id);
 	return !current ? (
 		<Redirect to="/portfolio" />) : (
@@ -12,12 +12,7 @@ const Project = ({match:{params:{id}}}) => {
 	);
 }
 
-export default Project;
 
-//         <section className="projects box">
-//           <div className="title">Software Engineering Projects</div>
-//           {projects.map(project)}
-//         </section>
 //   function project(p,i) {
 //     return (
 //       <section key={i}>
