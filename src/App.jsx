@@ -7,7 +7,7 @@ import Main from './Main.jsx';
 
 export default () => (
   <div className="App">
-    <Router>
+    <Router basename="/about">
       <Nav />
       <Switch>
         <Route exact path="/" component={Home} />
